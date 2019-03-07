@@ -1,0 +1,12 @@
+<div class="container">
+  <div>Item {{ itemCount }}</div>
+  <form>
+    <input type="text" name="txtEmail" [(ngModel)]="itemEmail" />
+    <br />
+    <br />
+    <button type="submit" class="btn btn-primary" (click)="onCountItem()">
+      Submit
+    </button>
+  </form>
+  <div *ngFor="let item of emails">{{ item }}</div>
+</div>
